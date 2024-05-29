@@ -1,8 +1,24 @@
-.weatherBox {
-    background-color: aliceblue;
-    width: 20rem;
-    height: 20rem;
+.body {
+    border-color: black;
+    border-width: 0.15rem;
+    border-style: dashed;
+    width: 30rem;
+    height: 25rem;
     padding: 2rem;
-    border-radius: 15px;
+    border-radius: 2rem;
     margin-right: 1rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 500;
+    border-radius: 1.8rem;
+}
+
+@media (max-width: 1492px) {
+    .body {
+        width: 22rem;
+        height: 25rem;
+    }
 }

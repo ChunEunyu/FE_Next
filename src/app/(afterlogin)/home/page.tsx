@@ -1,5 +1,5 @@
 import NavMenu from "../_component/NavMenu/NavMenu";
-import HomeSlider from "../_component/ImageSlider/ImageSlider";
+import ImageSlider from "../_component/ImageSlider/ImageSlider";
 import styles from './page.module.css'
 import TodayWeatherBox from "./_component/TodayWeatherBox/TodayWeatherBox";
 import TodayLuck from "./_component/TodayLuckBox/TodayLuckBox";
@@ -11,17 +11,19 @@ import Footer from '../_component/Footer/Footer';
 
 export default function Home() {
   return (
-    <div className={styles.homeBody}>
+    <div className={styles.body}>
       <NavMenu isBarVisible={false} />
-      <div className={styles.homeContent}>
-        <div>
-          <HomeSlider />
+      <div className={styles.section}>
+        <div className={styles.content}>
+          <div className={styles.slider}>
+            <ImageSlider />
+          </div>
           <div className={styles.todayBox}>
             <TodayWeatherBox />
             <TodayLuck />
           </div>
         </div>
-        <div className={styles.ContentAria}>
+        <div className={styles.content}>
           <HotPostList />
           <AdsBox />
         </div>

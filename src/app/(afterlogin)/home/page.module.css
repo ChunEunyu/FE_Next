@@ -1,18 +1,41 @@
-.homeBody {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+.body {
+    width: 100%;
 }
 
-.ContentAria {
+.section {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.content {
     display: flex;
 }
 
-.homeContent {
-    margin: 1rem;
+.slider {
+    width: 70%;
 }
 
 .todayBox {
     display: flex;
-    
+    flex-direction: column;
+    width: 30%;
+    padding-top: 1rem;
+}
+
+@media (max-width: 1492px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .todayBox {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .slider {
+        width: 100%;
+    }
 }

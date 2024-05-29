@@ -11,7 +11,7 @@ import styles from './ImageSlider.module.css';
 
 export default function HomeSlider() {
     return (
-      <div className={styles.HomeSliderBody}>
+      <div className={styles.body}>
         <Swiper
             spaceBetween={30}
             centeredSlides={true}
@@ -25,10 +25,9 @@ export default function HomeSlider() {
             navigation={true}
             modules={[Autoplay, Pagination, Navigation]}
             className="mySwiper"
-            
         >
             <SwiperSlide>
-                <div className={styles.imageWrapper}>
+                <div className={styles.wrapper}>
                         <Image
                             className={styles.image}
                             src="/img/homeSlider/positano.jpg" // public 폴더 내의 경로
@@ -40,7 +39,7 @@ export default function HomeSlider() {
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className={styles.imageWrapper}>
+                <div className={styles.wrapper}>
                     <Image
                         className={styles.image}
                         src="/img/homeSlider/positano.jpg" // public 폴더 내의 경로
